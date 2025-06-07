@@ -1,24 +1,20 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-
 @Component({
   selector: 'app-addition',
-  standalone: true, // Required for standalone components
-  imports: [FormsModule],
+  standalone: true,
+  imports: [FormsModule],  // <-- Add comma here
   templateUrl: './addition.html',
   styleUrls: ['./addition.css']
 })
-
-
-
 export class Addition {
-  no1: number = 10;
-  no2: number = 20;
-  answer: number = 0;
+  number1: number = 0;
+  number2: number = 0;
+  sum: number | null = null;
 
-  add() {
-    this.answer = this.no1 + this.no2;
-    console.log(this.answer);
+  addNumbers() {
+    this.sum = Number(this.number1) + Number(this.number2);
+    console.log('Sum:', this.sum);
   }
 }
