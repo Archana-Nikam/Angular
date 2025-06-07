@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Addition } from './addition/addition';
+import {  Calculator } from './calculator/addition';  // adjust path as needed
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Addition],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [Calculator],
+  template: `<h1>Simple Addition</h1><app-addition></app-addition>`
 })
 export class App {
-  protected title = 'calculator';
-  
-}
 
+}
