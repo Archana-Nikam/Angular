@@ -1,1 +1,13 @@
-<p>arrayex works!</p>
+<!-- <p>arrayex works!</p> -->
+<table>
+  <tr>
+    <th>username</th>
+    <th>password</th>
+    <th>mobno</th>
+  </tr>
+  <tr *ngFor="let i of users">
+    <td>{{i.username}}</td>
+    <td>{{i.password}}</td>
+    <td>{{i.mobno}}</td>
+  </tr>
+</table>
