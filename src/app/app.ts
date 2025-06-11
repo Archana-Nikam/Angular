@@ -2,13 +2,15 @@
 import { Component } from '@angular/core';
 // import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
-import { Arrayex } from './arrayex/arrayex';
-import { Product } from './product/product';
+// import { Arrayex } from './arrayex/arrayex';
+// import { Product } from './product/product';
+import { Nav } from './nav/nav';
 
 @Component({
   selector: 'app-root',
   // imports:[FormsModule,CommonModule,],
-  imports: [RouterOutlet,Arrayex,Product],
+  // imports: [RouterOutlet,Arrayex,Product],
+  imports: [RouterOutlet,Nav],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
