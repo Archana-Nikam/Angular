@@ -4,13 +4,15 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 // import { Arrayex } from './arrayex/arrayex';
 // import { Product } from './product/product';
-import { Nav } from './nav/nav';
+// import { Nav } from './nav/nav';
+import { Apicall } from './apicall/apicall';
 
 @Component({
   selector: 'app-root',
   // imports:[FormsModule,CommonModule,],
   // imports: [RouterOutlet,Arrayex,Product],
-  imports: [RouterOutlet,Nav],
+  // imports: [RouterOutlet,Nav,Apicall],
+   imports: [RouterOutlet,Apicall],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
